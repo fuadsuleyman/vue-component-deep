@@ -1,11 +1,22 @@
 <template>
   <div>
-    <header>
-        <slot name="header"></slot>
+    <header v-if="$slots.header">
+      <slot name="header">
+        <!-- <h2>The Default</h2> -->
+        <!-- bu yuxaridaki eger slot-u elave etdiyimiz yerde kontent yoxdusa gorsenecek -->
+      </slot>
     </header>
     <slot></slot>
   </div>
 </template>
+
+<script>
+export default {
+    mounted() {
+        console.log(`this.$slots.header: ${this.$slots.header}`);
+    },
+}
+</script>
 
 <style scoped>
 div {

@@ -12,9 +12,9 @@
 
 <script>
 export default {
-    mounted() {
-        console.log(`this.$slots.header: ${this.$slots.header}`);
-    },
+    // mounted() {
+    //     console.log(`this.$slots.header: ${this.$slots.header}`);
+    // },
 }
 </script>
 

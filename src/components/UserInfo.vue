@@ -8,13 +8,13 @@
   </section>
 </template>
 
-<script scoped>
+<script>
 export default {
   props: ['fullName', 'infoText', 'role'],
 };
 </script>
 
-<style>
+<style scoped>
 section {
   margin: 2rem auto;
   max-width: 30rem;
